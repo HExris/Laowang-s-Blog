@@ -1,0 +1,236 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Kabel Light';
+    src: url('../fonts/Kabel Light.eot');
+	src: url('../fonts/Kabel Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kabel Light.ttf') format('truetype'),
+         url('../fonts/Kabel Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}		
+body{
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	background-color: #18191d;
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	height: 100%;
+	width: 100%;
+}
+.container.demo-1{
+	height: 100%;
+}
+.content{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.content:before{
+	content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.25em;
+}
+.login-main-body{
+	padding: 40px 0 0;
+	overflow: hidden;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	width: 300px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.15);
+}
+.login-header,.login-description{
+	text-align: center;
+	font-family: "microsoft yahei";
+}
+.login-header h1{
+	font-family: "SimSun";
+	font-size: 30px;
+	line-height: 30px;
+	color: #fff;
+}
+.login-description{
+	margin-top: 20px;
+}
+.login-description p{
+	color: #a5a5a5;
+	font-family: "STKaiti";
+	font-size: 17px;
+}
+.index-tab-navs{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	height: 35px;
+	margin: 25px 0 15px;
+}
+.index-tab-navs a:visited{
+	color: #0f88eb;
+}
+.index-tab-navs a{
+	font-size: 18px;
+	font-family: "microsoft yahei";
+	outline: none;
+	color: #0f88eb;
+	margin: 0 5px;
+	text-decoration: none;
+}
+#nav-tab{
+	position: absolute;
+	left: 102px;
+	bottom: 3px;
+	display: block;
+	height: 2px;
+	background-color: #0F88EB;
+	width: 42px;
+	transition: left .3s linear;
+}
+.tab-box{
+	width: 300%;
+	overflow: hidden;
+}
+.tab-box input{
+	font-family: "microsoft yahei";
+	font-size: 16px;
+}
+.view{
+	width: 33.3%;
+	float: left;
+	margin-right: 100px;
+}
+.tab-box{
+	transition: 0.8s ease all;
+}
+.show{
+	transform: translateX(-400px);
+}
+.input-wrapper input{
+	outline: none;
+	margin-top: 0;
+	padding: 14px 14px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+}
+.tips{
+	font-size: 1.2em;
+	color: #f00;
+}
+.name input,#username{
+	outline: none;
+	border-radius: 3px 3px 0 0;
+}
+.password input{
+	outline: none;
+	border-radius: 0 0 3px 3px;
+}
+
+#sign,#login{
+	width: 100%;
+	color: #fff;
+	background-color: #0f88eb;
+	border: 1px solid #0f88eb;
+	padding: 7px 0;
+	border-radius: 3px;
+}
+#sign{
+	margin-top: 23px;
+}
+#login{
+	margin-top: 43px;
+}
+#signFullnameBox,#signUsernameBox,#signPasswordBox{
+	position: relative;
+}
+#sign-fullname-tips,#sign-username-tips,#sign-password-tips{
+	position: absolute;
+	top: 16px;
+	right: 15px;
+	font-size: 14px;
+}
+#sign-username-tips{
+	position: absolute;
+	top: 16px;
+	right: 15px;
+	font-size: 14px;
+}
+::-moz-placeholder { color: #bbbbbb; }
+::-webkit-input-placeholder { color:#bbbbbb; }
+:-ms-input-placeholder { color:#bbbbbb; }
+#login-form{
+	padding-top: 30px;
+}
+#demo-canvas{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+#demo-canvas:after{
+	content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.25em;
+}
+
+#powered{
+	display: block;
+	font-family: 'Kabel Light';
+	font-weight: bold;
+	color: white;
+	font-size: 23px;
+	text-decoration: none;
+	text-shadow: 0 0 15px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 15px rgba(255,255,255,1) , 0 0 5px #FFF , 0 0 10px #FFF , 0 0 20px #FFF , 0 0 30px #FFF ;
+	z-index: 5;
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	height: 40px;
+}
+#powered:hover{
+	font-weight: bolder;
+	text-shadow: 0 0 15px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 15px rgba(255,255,255,1) ,0 0 20px rgba(255,255,255,1) , 0 0 5px #FFF , 0 0 10px #FFF , 0 0 20px #FFF , 0 0 30px #FFF, 0 0 40px #FFF, 0 0 50px #FFF ;
+}
+.alert{
+	display: none;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #dca7a7;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: center;
+}
+.danger{
+		width: 300px;
+		animation: shake 1.2s;
+		color: #a94442;
+	  background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%);
+}
+.warning{
+		width: 400px;
+		animation: flash 1.2s;
+		color: #8a6d3b;
+	  background-image: linear-gradient(to bottom,#fcf8e3 0,#f8efc0 100%);
+}
+.success{
+		width: 320px;
+		animation: bounceInDown 1.2s;
+		color: #3c763d;
+    background-image: linear-gradient(to bottom,#dff0d8 0,#c8e5bc 100%);
+}
+.el-notification{
+	font-family: "Microsoft Yahei";
+}
